@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trackmania-vla"
+version = "0.1.0"
+description = "Qwen2.5-VL-3B LoRA driving policy for TrackMania Nations Forever A01: frames + telemetry to steering/throttle chunks"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+model = ["torch>=2.11,<2.12", "torchvision>=0.26,<0.27", "transformers>=4.57,<5", "peft>=0.19.1", "Pillow>=10", "numpy>=1.26", "num2words>=0.5.14"]
+game = ["Pillow>=10", "psutil>=5.9", "tminterface>=1.0.2"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

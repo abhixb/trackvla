@@ -1,0 +1,18 @@
+.venv/
+.model-cache/
+.downloads/
+.claude/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Large or machine-specific artifacts: model weights, recorded laps, run logs.
+checkpoints/
+datasets/
+logs/
+
+# Run summaries and lap videos (the README's GIFs are in docs/media).
+evaluations/
+
+# Internal planning notes
+PLAN.md
